@@ -1,0 +1,786 @@
+/* Global Styling */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 6px 10px;
+}
+button[type="button"]{
+    background-color: rgb(11, 165, 11);
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: rgb(28, 235, 28);
+    color: black;
+}
+
+
+/* Main Container Styling */
+.container{
+    text-align: center;
+    margin: auto;
+    max-width: 1360px;
+}
+
+/* Logo styling */
+.container .logo img{
+    width: 180px;
+    height: auto;
+    margin: 3px 70px;
+}
+.container .logo .extra{
+    opacity: 30%;
+    width: 150px;
+    height: auto;
+}
+.container .logo{
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 12px;
+}
+
+/* NavBar Styling */
+.container-nav{
+    position: relative;
+    margin: 0;
+    width: auto;
+}
+.container .nav-bar{
+    display: inline-block;
+    margin-top: 6px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 10px;
+    z-index: 1;
+    width: 98%;
+    border-bottom: rgb(22, 22, 22, 0.2) 1px solid;
+}
+.container .nav-bar a{
+    text-transform: uppercase;
+    color: rgb(53, 52, 52, 0.7);
+    font-weight: 550px;
+    padding-bottom: 4px;
+}
+
+.container .nav-bar a:hover{
+    color: rgb(196, 196, 8);
+    border-bottom: 2px rgb(196, 196, 8) solid;
+}
+.container .nav-bar a.active{
+    color: rgb(196, 196, 8);
+    border-bottom: 2px rgb(196, 196, 8) solid;
+}
+
+/* Main Banner Styling */
+.main-banner{
+    background-image: url(../img/mainBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 0;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+/* Content 01 Styling */
+.container-nav .mainArt{
+    width: 50%;
+    margin-top: 25px;
+}
+.container-nav .overview p{
+    padding: 10px 70px;
+    font-size: 14px;
+    line-height: 22px;
+    width: 1100px;
+    margin: auto;
+}
+
+.container-nav .btn{
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Content2 Styling */
+
+.container-nav .content-2{
+    display: flex;
+    margin: 0 50px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+.container-nav .content-2 .card{
+    flex: 1;
+    margin: 30px;
+    background-color: rgb(214, 211, 211);
+    padding-bottom: 15px;
+}
+.container-nav .content-2 .card .card-text{
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.container-nav .content-2 .card .card-title{
+    text-transform: uppercase;
+    padding-top: 0;
+    font-weight: 520;
+}
+
+
+/* Offer Section Styling */
+
+.container-nav .offer-card{
+    display: flex;
+    margin: 0 70px;
+    margin-top: 20px;
+}
+.container-nav .offer-card .content{
+    flex: 1;
+    margin: 15px;
+    height: 300px;
+    position: relative;
+}
+
+.container-nav .offer-card .content .text{
+    background-color: rgba(129, 113, 21, 0.7);
+    margin: 0 0;
+    position: absolute;
+    bottom: 0px;
+    width: 96%;
+    text-align: left;
+    padding-left: 15px;
+}
+.container-nav .offer-card .content .text p{
+    color: white;
+    font-size: 12px;
+}
+.container-nav .offer-card .content .text h4{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.backg-1{
+    background-image: url(../img/Offer01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backg-2{
+    background-image: url(../img/Offer03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backg-3{
+    background-image: url(../img/Offer02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  */
+
+
+/* Footer Styling */
+footer{
+    margin: auto;
+}
+footer .section{
+    background-color: rgb(234, 235, 201);
+    padding: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    padding-left: 90px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+footer .section .section-1{
+    flex: 2;
+    position: relative;
+}
+footer .section .section-2,
+footer .section .section-3{
+    flex: 1;
+    margin: auto;
+}
+footer .section .section-2 h3,
+footer .section .section-1 h3{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+footer .section .section-1 p{
+    font-size: 13px;
+    font-weight: 500;
+}
+footer .section .section-1 input{
+    padding: 15px;
+    width: 50%;
+    border: none;
+    margin-right: 0;
+}
+footer .section .section-1 input:focus{
+    padding: 15px;
+    width: 50%;
+    border: none;
+    margin-right: 0;
+}
+footer .section .section-1 button{
+    padding: 15px 20px;
+    border: none;
+    background-color: rgb(255, 174, 0);
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+footer .section .section-2 ul{
+    list-style: none;
+    padding: 0;
+}
+footer .section .section-2 li{
+    line-height: 22px;
+    font-size: 14px;
+}
+footer .section .section-3{
+    margin-top: 10px;
+    position: relative;
+    font-size: 14px;
+}
+footer .section .section-3 .social-media{
+    display: inline-block;
+}
+footer .section .section-3 .contact div{
+    padding-bottom: 10px;
+}
+footer .section .section-3 .contact div img{
+    width: 13px;
+    justify-self: center;
+    padding-right: 10px;
+}
+
+footer-copy{
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+footer{
+    background-color: rgb(234, 235, 201);;
+    padding: 10px;
+}
+
+.container .spa{
+    background-image: url(../img/ayurveda-spa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
+    position: relative;
+    display: flex;
+    margin-bottom: 80px;
+    z-index: 0;
+}
+.container .spa .space{
+    flex: 2;
+}
+.container .spa .icon{
+    flex: 1;
+    font-size: 10em;
+    text-transform: uppercase;
+    color: rgb(201, 198, 11);
+    font-family: serif;
+    padding: 10px 10px 20px 20px;
+    background-color: white;
+    font-weight: 700;
+}
+.container .spa .jumbo{
+    flex: 4;
+    text-align: left;
+    padding: 30px;
+    color: white;
+    background-color: rgb(17, 17, 17,0.6) ;
+}
+.container .spa .jumbo button{
+    margin: 0;
+}
+.container .spa .jumbo h1{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container .spa .jumbo p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.container .things{
+    display: flex;
+    margin-bottom: 100px;
+    z-index: -1;
+}
+.container .things .image{
+    flex: 2;
+}
+.container .things .text{
+    flex: 1;
+}
+.container .things .image{
+    background-image: url(../img/serf.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    margin: 30px;
+    margin-bottom: 10px;
+    z-index: 0;
+}
+.container .things .image #img1{
+    height: 150px;
+    width: 230px;
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    z-index: 1;
+}
+.container .things .image #img2{
+    height: 100;
+    width: 150;
+    position: absolute;
+    bottom: 200px;
+    right: -40px;
+    z-index: 0;
+}
+.container .container-nav .things .text{
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.container .container-nav .things .text .title{
+    display: flex;
+    position: relative;
+}
+.container .container-nav .things .text .title h3{
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.container .container-nav .things .text .title h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    position: absolute;
+    left: 205px;
+    bottom: -10px;
+    color: rgb(8, 180, 8);
+}
+.container .container-nav .things .text p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* Contact page styling */
+.container-c{
+    margin: auto;
+    max-width: 1720px;
+    text-align: center;
+}
+.container-c .main-head{
+    display: flex;
+    background-color: green;
+    position: fixed;
+    width: 100%;
+}
+.container-c .main-head .header{
+    flex: 1;
+    text-align: left;
+}
+.container-c .main-head .nav-bar-2{
+    flex: 1;
+    text-align: right;
+    margin-top: 0px;
+}
+.container-c .main-head .header p{
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    color: white;
+}
+.container-c .main-head .nav-bar-2 a{
+    margin-right: 20px;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.container-c .main-head .nav-bar-2 a.active,
+.container-c .main-head .nav-bar-2 a:hover{
+    color: yellowgreen;
+    border-bottom: 1px solid white;
+}
+
+/* Prime head styling */
+
+.container-c .empty{
+    height: 40px;
+}
+
+.container-c .prim-head{
+    display: flex;
+}
+.container-c .prim-head .logo{
+    flex: 8;
+}
+.container-c .prim-head .logo h1{
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 30px;
+}
+.container-c .prim-head .selects{
+    flex: 4;
+}
+.container-c .prim-head .selects select{
+    padding: 8px 15px;
+    margin-top: 12px;
+    margin: 10px 5px;
+}
+.container-c .prim-head img{
+    width: 160px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.banner{
+    background-image: url(../img/food.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.contacts{
+    display: flex;
+}
+
+.contacts form{
+    flex: 2;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.contacts label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.contacts input{
+    width: 90%;
+    padding: 7px 10px;
+    border: 1px solid rgb(5, 5, 5, 0.3);
+    margin: 12px 0;
+}
+.contacts textarea{
+    padding: 7px 10px;
+    width: 90%;
+    border: 1px solid rgb(5, 5, 5, 0.3);
+    margin: 12px 0;
+}
+.contacts input[type="submit"]{
+    width: 10%;
+    background-color: rgb(70, 86, 236);
+    color: white;
+    padding: 8px;
+}
+
+.contacts .address{
+    flex: 1;
+}
+.contacts .address h4{
+    text-transform: uppercase;
+    color: rgb(56, 54, 54, 0.8);
+}
+.contacts .address p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+/* Styling About Page */
+
+.banner-about{
+    background-image: url(../img/about-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.about p{
+    margin-left: 70px;
+    margin-right: 90px;
+    font-size: 14px;
+}
+.about h5{
+    margin-left: 70px;
+    font-weight: 600;
+}
+
+.about .mngmt{
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    margin-left: 70px;
+}
+.about .positions p{
+    text-transform: uppercase;
+}
+.about .positions li{
+    margin-left: 70px;
+    font-size: 14px;
+}
+.about .team{
+    margin-bottom: 90px;
+}
+.about .team h5{
+    font-weight: 600px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.about .team p{
+    font-size: 14px;
+}
+
+/* Styling Accommodation page */
+
+.banner-accom{
+    background-image: url(../img/accommodationbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+.content-accm{
+    display: flex;
+    margin: 0 70px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 60px;
+}
+.content-accm .card{
+    flex: 1;
+    margin: auto;
+}
+.content-accm .card .card-text{
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+.content-accm .card .card-title{
+    text-transform: uppercase;
+    padding-top: 0;
+    font-weight: 520;
+    text-align: left;
+    margin-left: 19px;
+}
+
+/* Sign Up Page Styling */
+
+.container-signup .body{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(228, 214, 214);
+    padding: 40px;
+    border-radius: 60px;
+}
+
+.container-signup{
+    text-align: center;
+    margin: auto;
+}
+
+.container-signup .logo-main img{
+    height: 45px;
+    width: auto;
+    margin-top: 17px;
+}
+
+.container-signup .head{
+    display: flex;
+}
+.container-signup .head .logo-main{
+    flex: 1;
+}
+.container-signup .head .page-title{
+    flex: 3;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container-signup .head .page-title h1{
+    font-weight: 600px;
+}
+
+.container-signup .body .form{
+    text-align: left;
+}
+.container-signup .body .form input{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+}
+.container-signup .body .form input[type="checkbox"]{
+    /* float: left; */
+    position: absolute;
+    left: -230px;
+}
+.container-signup .body .form p{
+    /* float: right; */
+    position: absolute;
+    left: 470px;
+    top: 585px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container-signup .body .form #submit{
+    background-color: rgb(24, 143, 24);
+    margin-top: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 15px;
+}
+
+.container-signup .body .form #submit:hover{
+    background-color: rgb(0, 109, 0);
+}
+
+
+/* Styling Gallery Page */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+    margin: 60px;
+}
+
+.gallery div{
+    height: 300px;
+    width: 300px;
+    margin: 0;
+}
+
+.gallery .img1{
+    background-image: url(../img/Sport.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery .img2{
+    background-image: url(../img/Accomodation.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery .img3{
+    background-image: url(../img/Offer03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery .img4{
+    background-image: url(../img/Offer02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-c .gallery .img1 .bg:hover,
+.container-c .gallery .img4 .bg:hover,
+.container-c .gallery .img3 .bg:hover,
+.container-c .gallery .img2 .bg:hover{
+    background-color: rgb(15, 15, 15,0.5);
+}
+
+
+/* Booking page styling */
+
+.formBook label{
+    margin: 5px 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.formBook input[type="date"],
+.formBook input[type="email"]{
+    width: 80%;
+    height: 28px;
+}
+
+.formBook input[type="submit"]{
+    width: 30%;
+    height: 35px;
+    background-color: green;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.formBook{
+    background-color: rgb(111, 180, 111);
+    margin: 40px 200px;
+    padding: 20px 40px;
+}
+
+.formBook select{
+    width: 20%;
+    height: 28px;
+}
+
+#plus,
+#minus{
+    padding: 5px 18px;
+    background-color: indigo;
+    margin: 0 !important;
+    color: white;
+    font-size: 25px;
+}
+
+input:read-only{
+    width: 5%;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formBook .counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
