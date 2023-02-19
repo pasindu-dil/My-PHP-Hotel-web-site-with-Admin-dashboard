@@ -52,17 +52,17 @@
                     <div class="card-box">
                         <div class="card1 card">
                             <h4>All Bookings</h4>
-                            <p><?php $sql = "select count(id) from book"; $result = mysqli_query($conn, $sql); 
+                            <p><?php $sql = "select count(id) as count from book"; $result = mysqli_query($conn, $sql); 
                             if (mysqli_num_rows($result) > 0) {
                                 while ($row = mysqli_fetch_assoc($result)) {
-                                    echo $row['count(id)'];
+                                    echo $row['count'];
                                 }
                             } ?></p>
                             <h5>Increase by 60%</h5>
                         </div>
                         <div class="card2 card">
                             <h4>All Users</h4>
-                            <p><?php $sql = "select count(email) from user"; $result = mysqli_query($conn, $sql); 
+                            <p><?php $sql = "select count(email) from user where AuthLevel = 'user'"; $result = mysqli_query($conn, $sql); 
                             if (mysqli_num_rows($result) > 0) {
                                 while ($row = mysqli_fetch_assoc($result)) {
                                     echo $row['count(email)'];
@@ -240,7 +240,6 @@
                 </div>
             </div>
         </div>
-
 
         <script src="../admin/styles/main.js"></script>
 </body>

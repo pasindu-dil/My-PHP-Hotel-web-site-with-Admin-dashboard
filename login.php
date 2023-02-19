@@ -53,10 +53,10 @@ include('inc/db.inc.php');
     <?php
         
         if(isset($_POST['submit'])){
-            $uname = $_POST['uname'];
+            $email = $_POST['uname'];
             $passw = $_POST['passw'];
 
-            $sql = "select * from user where user_name = '$uname' and password = '$passw'";
+            $sql = "select * from user where email = '$email' and password = '$passw'";
 
             $result = mysqli_query($conn, $sql);
 

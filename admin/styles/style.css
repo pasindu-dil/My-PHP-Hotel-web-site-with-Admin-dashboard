@@ -145,7 +145,7 @@ li:hover{
     top: 10vh;
     background-color: rgb(223, 233, 233);
     height: auto;
-
+    min-height: 700px;
     padding: 20px;
 }
 
