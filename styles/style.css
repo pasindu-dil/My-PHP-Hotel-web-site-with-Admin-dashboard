@@ -819,3 +819,14 @@ input:read-only {
   display: flex;
   justify-content: space-around;
 }
+
+.grid-book {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.bookings {
+  background-color: #eee;
+  padding: 20px;
+}

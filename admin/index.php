@@ -1,11 +1,16 @@
 
-<?php include_once ('../inc/db.inc.php'); ?>
+<?php 
+include_once ('../inc/db.inc.php'); 
+$page = $_SERVER['PHP_SELF'];
+$sec = "1800";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adazons Hotel & Resort Admin Panel</title>
 
@@ -28,9 +33,8 @@
                     <span><img src="./img//icons8_menu_24px.png" alt=""></span>
                     <a href=".././index.php" style="padding-left: 18px;"><p>Visit adazons.com</p></a>
                 </div>
-                <div class="right">
-                    
-                    <img src="./img//icons8_male_user_50px.png" alt="">
+                <div class="right" style="background-color: red; padding: 10px;">
+                <a href="../logout.php" class="menu" id='log-out' style="color: white;">Log Out</a>
                 </div>
             </div>
         </div>

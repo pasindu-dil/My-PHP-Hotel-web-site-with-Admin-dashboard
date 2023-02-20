@@ -9,8 +9,19 @@
         <a href="about.php">About Us</a>
         <a href="contact.php">Contact Us</a>
         <a href="gallery.php">Gallery</a>
-        <a href="login.php">Sign In</a>
-        <a href="signup.php">Sign Up</a>
+        <?php
+        if (isset($_SESSION['isLogged'])) {
+            ?>
+            <a href="myaccount.php" class="menu" id='my-account'>My Account</a>
+            <a href="logout.php" class="menu" id='log-out'>Log Out</a>
+            <?php
+        } else {
+            ?>
+            <a href="login.php" id="signin" class="menu">Sign In</a>
+            <a href="signup.php" class="menu">Sign Up</a>
+            <?php
+        }
+    ?>
     </div>
 </div>
 <div class="empty"></div>

@@ -1,7 +1,9 @@
 <?php
     session_start();
     include_once('inc/db.inc.php');
-    
+    if (!isset($_SESSION['isLogged'])) {
+        header("Location: login.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +24,7 @@
 
         <form class="formBook" action="" method="POST">
             <label for="">Your Email</label><br>
-            <input type="email" name="email" required id="" placeholder="Enter your email..."><br><br>
+            <input type="email" name="email" required id="" value="<?= $_SESSION['isLogged'] ?>"><br><br>
             <label for="">Arrival</label><br>
             <input type="date" required name="date" id=""><br><br>
             <select name="room" id="">

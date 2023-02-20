@@ -64,6 +64,7 @@ include('inc/db.inc.php');
                 $_SESSION['attempt'] = true;
                 
                 while($row = mysqli_fetch_assoc($result)){
+                    $_SESSION['isLogged'] = $row['email'];
                     if($row['AuthLevel'] == "admin"){
                         header("Location: ./admin/index.php");
                     }else{

@@ -1,4 +1,7 @@
-<?php include_once 'inc/db.inc.php'; ?>
+<?php 
+include_once 'inc/db.inc.php';
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">

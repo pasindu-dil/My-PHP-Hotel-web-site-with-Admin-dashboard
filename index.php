@@ -181,7 +181,10 @@
     </div>
 
 
-    
+    <script>
+        let home = document.getElementById('home');
+        home.classList.add('active');
+    </script>
 
 
 </body>
